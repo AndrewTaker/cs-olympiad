@@ -1,0 +1,34 @@
+[project]
+name = "cs-oly"
+version = "0.1.0"
+description = "cs ai oly"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas==2.1",
+    "numpy",
+    "polars",
+    "ydata-profiling",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "xgboost",
+    "lightgbm",
+    "catboost",
+    "imbalanced-learn",
+    "torch",
+    "torchvision",
+    "pytorch-lightning",
+    "opencv-python",
+    "Pillow",
+    "scikit-image",
+    "albumentations",
+    "nltk",
+    "spacy",
+    "transformers",
+    "gensim",
+    "fasttext",
+    "numba",
+    "scipy",
+    "ipykernel",
+]
