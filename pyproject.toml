@@ -27,7 +27,7 @@ dependencies = [
     "spacy",
     "transformers",
     "gensim",
-    "fasttext",
+    "fasttext-wheel",
     "numba",
     "scipy",
     "ipykernel",
