@@ -3,7 +3,7 @@ name = "cs-oly"
 version = "0.1.0"
 description = "cs ai oly"
 readme = "README.md"
-requires-python = "==3.12"
+requires-python = "==3.12.11"
 dependencies = [
     "pandas",
     "numpy",
@@ -31,4 +31,7 @@ dependencies = [
     "numba",
     "scipy",
     "ipykernel",
+    "jupyterlab>=4.5.2",
 ]
+[tool.uv]
+concurrent-downloads = 2
