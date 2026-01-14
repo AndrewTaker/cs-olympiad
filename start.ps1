@@ -1,7 +1,7 @@
 $url = "https://aka.ms/vs/17/release/vs_buildtools.exe"
 $installerPath = "$env:TEMP\vs_buildtools.exe"
 
-Write-Host "Downloading Visual Studio Build Tools 2022..." -ForegroundColor Cyan
+Write-Host "Скачиваю Visual Studio Build Tools 2022..." -ForegroundColor Cyan
 Invoke-WebRequest -Uri $url -OutFile $installerPath
 
 $installArgs = @(
@@ -18,7 +18,7 @@ $process = Start-Process -FilePath $installerPath -ArgumentList $installArgs -Wa
 Remove-Item $installerPath -ErrorAction SilentlyContinue
 
 if ($process.ExitCode -eq 0 -or $process.ExitCode -eq 3010) {
-    Write-Host "Installation successful! (Note: Exit code 3010 means a restart is required)." -ForegroundColor Green
+    Write-Host "Установлено, нужен ребут" -ForegroundColor Green
 } else {
-    Write-Host "Installation failed with exit code: $($process.ExitCode)" -ForegroundColor Red
+    Write-Host "Не установлено: $($process.ExitCode)" -ForegroundColor Red
 }
